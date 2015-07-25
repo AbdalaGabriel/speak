@@ -17,10 +17,24 @@
    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" >
 
+ function alertDismissed() {
+      // do something
 
-$("#boton").click(function(){
 
-alert("hola");
+  }
+
+  navigator.notification.alert(
+      'Estas en casa!!',  // message
+       alertDismissed,         // callback
+      'Ubicación',            // title
+      'Ok!'                  // buttonName
+  );
+
+
+/*$("#boton").click(function(){
+
+  alert("hola");
+ 
 
 })
     
@@ -31,7 +45,8 @@ $("#boton2").click(function(){
     MobileAccessibility.speak('This string will be announced when a screen reader is active on the device.');
    
 
-})
+})*/
+
      
 
 
